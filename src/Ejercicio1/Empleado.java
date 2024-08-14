@@ -12,10 +12,20 @@ public class Empleado {
         this.nombre = nombre;
         this.edad = edad;
     }
+    
     public Empleado() {
     	this.ID = IdEmpleados++;
     	this.nombre = "sin nombre";
-    	
+    }
+
+    /*public static int devuelveProximoID() {
+        return IdEmpleados + 1;
+    }*/
+    
+    public static String devuelveProximoID() {
+    	return "El ID del proximo empleado es " + (IdEmpleados + 1)
+    }
+
     public String getNombre() {
         return nombre;
     }
