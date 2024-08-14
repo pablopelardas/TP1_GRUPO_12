@@ -2,16 +2,20 @@ package Ejercicio1;
 
 public class Empleado {
     
-    private int id;
+    private static int IdEmpleados = 1000;
+    private final int ID;
     private String nombre;
     private int edad;
     
     public Empleado( String nombre, int edad) {
-        this.id = 0;
+        this.ID = IdEmpleados++;
         this.nombre = nombre;
         this.edad = edad;
     }
-
+    public Empleado() {
+    	this.ID = IdEmpleados++;
+    	this.nombre = "sin nombre";
+    	
     public String getNombre() {
         return nombre;
     }
