@@ -1,33 +1,6 @@
 package Ejercicio1;
 
 public class Empleado {
-<<<<<<< Updated upstream
-    
-    private static int IdEmpleados = 1000;
-    private final int ID;
-    private String nombre;
-    private int edad;
-    
-    public Empleado( String nombre, int edad) {
-        this.ID = IdEmpleados++;
-        this.nombre = nombre;
-        this.edad = edad;
-    }
-    
-    public Empleado() {
-    	this.ID = IdEmpleados++;
-    	this.nombre = "sin nombre";
-    }
-
-    /*public static int devuelveProximoID() {
-        return IdEmpleados + 1;
-    }*/
-    
-    public static String devuelveProximoID() {
-    	return "El ID del proximo empleado es " + (IdEmpleados + 1)
-    }
-=======
->>>>>>> Stashed changes
 
 	private static int IdEmpleados = 1000;
 	private final int ID;
@@ -47,7 +20,7 @@ public class Empleado {
 	}
 
 	public static int devuelveProximoID() {
-		System.out.println("El próximo ID será el " + IdEmpleados);
+  	System.out.println("El próximo ID será el " + IdEmpleados);
 		return IdEmpleados;
 	}
 
