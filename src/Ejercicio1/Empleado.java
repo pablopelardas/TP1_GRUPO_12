@@ -19,9 +19,8 @@ public class Empleado {
 		this.edad = 99;
 	}
 
-	public static int devuelveProximoID() {
-  	System.out.println("El próximo ID será el " + IdEmpleados);
-		return IdEmpleados;
+	public static void devuelveProximoID() {
+	  	System.out.println("El próximo ID será el " + IdEmpleados);	
 	}
 
 	public String getNombre() {
